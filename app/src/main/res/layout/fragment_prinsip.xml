@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.notifications.diagnoseFragment.PrinsipFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prinsip Pemberian Makan tambahan"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/ijomuda"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"/>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/headerTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <!-- Isi ScrollView di sini -->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:background="@color/ijomuda"
+                    android:layout_height="2dp"/>
+
+                <!-- Tambahkan konten di sini -->
+                <LinearLayout
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/maknanlengkap"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        />
+                    <TextView
+                        android:padding="2dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="in the form of complete ready-to-eat food or snacks - rich sources of animal protein with attention to balanced nutrition; Animal side dishes are expected to come from 2 different types of protein sources. for example eggs and fish, eggs and chicken, eggs and meat. This aims to obtain a high protein content and complete essential amino acids"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:lottie_rawRes="@raw/maknanlengkap"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="in the form of complete ready-to-eat food or snacks - rich sources of animal protein with attention to balanced nutrition; Animal side dishes are expected to come from 2 different types of protein sources. for example eggs and fish, eggs and chicken, eggs and meat. This aims to obtain a high protein content and complete essential amino acids"/>
+                </LinearLayout>
+
+                <!-- Tambahkan konten tambahan di sini -->
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
